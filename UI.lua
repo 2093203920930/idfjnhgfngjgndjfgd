@@ -971,7 +971,7 @@ local Library do
                 BorderSizePixel = 0,
                 Name = "\0",
                 Position = UDim2New(1, 0, 0.5, 0),
-                Size = UDim2New(0, 15, 0, 15),
+                Size = UDim2New(0, 22, 0, 22),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(0, 181, 6)
@@ -979,7 +979,7 @@ local Library do
 
             Instances:Create("UICorner", {
                 Parent = Items["ColorpickerButton"].Instance,
-                CornerRadius = UDimNew(0, 3)
+                CornerRadius = UDimNew(0, 4)
             }) 
 
             Instances:Create("UIStroke", {
@@ -1976,7 +1976,7 @@ local Library do
                 Name = "\0",
                 BackgroundTransparency = 1,
                 Position = UDim2New(0, 15, 0, 15),
-                Size = UDim2New(1, -30, 0, 24),
+                Size = UDim2New(1, -30, 0, 34),
                 ZIndex = 2,
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -1984,16 +1984,16 @@ local Library do
 
             Instances:Create("UIListLayout", {
                 Parent = Items["SubPages"].Instance,
-                Padding = UDimNew(0, 10),
+                Padding = UDimNew(0, 12),
                 SortOrder = Enum.SortOrder.LayoutOrder,
                 FillDirection = Enum.FillDirection.Horizontal
             }) 
 
             Items["Columns"] = Instances:Create("Frame", {
                 Parent = Items["PageContent"].Instance,
-                Size = UDim2New(1, 0, 1, -55),
+                Size = UDim2New(1, 0, 1, -64),
                 Name = "\0",
-                Position = UDim2New(0, 0, 0, 55),
+                Position = UDim2New(0, 0, 0, 64),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 2,
                 BorderSizePixel = 0,
@@ -2004,7 +2004,7 @@ local Library do
                 Parent = Items["PageContent"].Instance,
                 Size = UDim2New(1, 0, 0, 1),
                 Name = "\0",
-                Position = Page.Search and UDim2New(0, 0, 0, 99) or UDim2New(0, 0, 0, 54),
+                Position = Page.Search and UDim2New(0, 0, 0, 110) or UDim2New(0, 0, 0, 63),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 2,
                 BorderSizePixel = 0,
@@ -2013,8 +2013,8 @@ local Library do
 
             if Page.Search then
                 Items["SubPages"].Instance.Position = UDim2New(0, 15, 0, 60)
-                Items["Columns"].Instance.Position = UDim2New(0, 0, 0, 100)
-                Items["Columns"].Instance.Size = UDim2New(1, 0, 1, -100)
+                Items["Columns"].Instance.Position = UDim2New(0, 0, 0, 111)
+                Items["Columns"].Instance.Size = UDim2New(1, 0, 1, -111)
 
                 Items["Search"] = Instances:Create("TextBox", {
                     Parent = Items["PageContent"].Instance,
@@ -2148,7 +2148,7 @@ local Library do
                 AutoButtonColor = false,
                 BorderColor3 = FromRGB(0, 0, 0),
                 Name = "\0",
-                Size = UDim2New(0, 100, 1, 0),
+                Size = UDim2New(0, 120, 1, 0),
                 BorderSizePixel = 0,
                 ZIndex = 3,
                 TextSize = 14,
@@ -2407,20 +2407,20 @@ local Library do
                 Text = Section.Name,
                 Name = "\0",
                 BorderSizePixel = 0,
-                Size = UDim2New(1, 0, 0, 16),
+                Size = UDim2New(1, 0, 0, 20),
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                Position = UDim2New(0, 10, 0, 8),
+                Position = UDim2New(0, 10, 0, 10),
                 ZIndex = 4,
-                TextSize = 14,
+                TextSize = 15,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Text"]:AddToTheme({TextColor3 = "Text"})
 
             Items["HeaderAccent"] = Instances:Create("Frame", {
                 Parent = Items["Section"].Instance,
-                Size = UDim2New(0, 3, 0, 14),
+                Size = UDim2New(0, 3, 0, 18),
                 Name = "\0",
-                Position = UDim2New(0, 6, 0, 9),
+                Position = UDim2New(0, 6, 0, 11),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -2436,7 +2436,7 @@ local Library do
                 Parent = Items["Section"].Instance,
                 Size = UDim2New(1, 0, 0, 1),
                 Name = "\0",
-                Position = UDim2New(0, 0, 0, 29),
+                Position = UDim2New(0, 0, 0, 36),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -2448,8 +2448,8 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Position = UDim2New(0, 14, 0, 42),
-                Size = UDim2New(1, -28, 0, 0),
+                Position = UDim2New(0, 16, 0, 48),
+                Size = UDim2New(1, -32, 0, 0),
                 BorderSizePixel = 0,
                 AutomaticSize = Enum.AutomaticSize.Y,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -2457,13 +2457,13 @@ local Library do
 
             Instances:Create("UIListLayout", {
                 Parent = Items["Content"].Instance,
-                Padding = UDimNew(0, 12),
+                Padding = UDimNew(0, 16),
                 SortOrder = Enum.SortOrder.LayoutOrder
             }) 
 
             Instances:Create("UIPadding", {
                 Parent = Items["Section"].Instance,
-                PaddingBottom = UDimNew(0, 16)
+                PaddingBottom = UDimNew(0, 20)
             }) 
 
             Instances:Create("UICorner", {
@@ -2510,7 +2510,7 @@ local Library do
                 Name = "\0",
                 BackgroundTransparency = 1,
                 BorderSizePixel = 0,
-                Size = UDim2New(1, 0, 0, 18),
+                Size = UDim2New(1, 0, 0, 32),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -2522,7 +2522,7 @@ local Library do
                 AnchorPoint = Vector2New(1, 0.5),
                 Name = "\0",
                 Position = UDim2New(1, 0, 0.5, 0),
-                Size = UDim2New(0, 18, 0, 18),
+                Size = UDim2New(0, 22, 0, 22),
                 ZIndex = 5,
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(15, 15, 22)
@@ -2585,7 +2585,7 @@ local Library do
                 Text = Toggle.Name,
                 Name = "\0",
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(1, 0, 0, 18),
+                Size = UDim2New(1, 0, 0, 32),
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
                 BorderSizePixel = 0,
@@ -2945,7 +2945,7 @@ local Library do
                 AutoButtonColor = false,
                 Name = "\0",
                 BorderSizePixel = 0,
-                Size = UDim2New(1, 0, 0, 24),
+                Size = UDim2New(1, 0, 0, 36),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(15, 15, 22)
@@ -3118,7 +3118,7 @@ local Library do
                 Parent = Slider.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Size = UDim2New(1, 0, 0, 32),
+                Size = UDim2New(1, 0, 0, 48),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -3135,7 +3135,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 18),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -3152,7 +3152,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Right,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 18),
                 ZIndex = 4,
                 TextSize = 13,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -3341,7 +3341,7 @@ local Library do
                 Parent = Dropdown.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Size = UDim2New(1, 0, 0, 45),
+                Size = UDim2New(1, 0, 0, 56),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -3359,7 +3359,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 18),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -3744,7 +3744,7 @@ local Library do
                 Parent = Label.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 24),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -3761,7 +3761,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment[Label.Alignment],
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 24),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -3831,7 +3831,7 @@ local Library do
                 Parent = Keybind.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Size = UDim2New(1, 0, 0, 45),
+                Size = UDim2New(1, 0, 0, 56),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -3849,7 +3849,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 18),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -3863,7 +3863,7 @@ local Library do
                 AnchorPoint = Vector2New(0, 1),
                 Name = "\0",
                 Position = UDim2New(0, 0, 1, 0),
-                Size = UDim2New(1, 0, 0, 24),
+                Size = UDim2New(1, 0, 0, 32),
                 ZIndex = 4,
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(15, 15, 22)
@@ -4095,7 +4095,7 @@ local Library do
                 Parent = Textbox.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Size = UDim2New(1, 0, 0, 45),
+                Size = UDim2New(1, 0, 0, 56),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
@@ -4113,7 +4113,7 @@ local Library do
                 BorderSizePixel = 0,
                 BackgroundTransparency = 1,
                 TextXAlignment = Enum.TextXAlignment.Left,
-                Size = UDim2New(1, 0, 0, 15),
+                Size = UDim2New(1, 0, 0, 18),
                 ZIndex = 4,
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -4127,7 +4127,7 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "",
                 ZIndex = 4,
-                Size = UDim2New(1, 0, 0, 24),
+                Size = UDim2New(1, 0, 0, 32),
                 AnchorPoint = Vector2New(0, 1),
                 Position = UDim2New(0, 0, 1, 0),
                 Name = "\0",
