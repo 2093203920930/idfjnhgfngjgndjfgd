@@ -211,8 +211,8 @@ local Library do
             ["Text"] = FromRGB(255, 255, 255),
             ["Element"] =  FromRGB(15, 15, 22),
             ["Image"] =  FromRGB(255, 255, 255),
-            ["Accent"] = FromRGB(88, 101, 242),
-            ["Light Accent"] = FromRGB(120, 130, 255),
+            ["Accent"] = FromRGB(147, 51, 234),
+            ["Light Accent"] = FromRGB(192, 132, 252),
             ["Border"] = FromRGB(25, 25, 35)
         }
     }
@@ -829,7 +829,7 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 5,
                 BorderSizePixel = 0,
-                BackgroundColor3 = FromRGB(88, 101, 242)
+                BackgroundColor3 = FromRGB(147, 51, 234)
             })  Items["NotifAccent"]:AddToTheme({BackgroundColor3 = "Accent"})
 
             Instances:Create("UICorner", {
@@ -1348,7 +1348,7 @@ local Library do
                 BackgroundTransparency = 1,
                 Position = UDim2New(0.5, 0, 0.5, 0),
                 SliceScale = 0.6000000238418579,
-                ImageColor3 = FromRGB(88, 101, 242),
+                ImageColor3 = FromRGB(147, 51, 234),
                 Size = UDim2New(1, 15, 1, 15),
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Shadow"]:AddToTheme({ImageColor3 = "Accent"})
@@ -1810,7 +1810,7 @@ local Library do
 
             Instances:Create("UIStroke", {
                 Parent = Items["Avatar"].Instance,
-                Color = FromRGB(88, 101, 242),
+                Color = FromRGB(147, 51, 234),
                 Thickness = 2,
                 ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             })
@@ -2182,7 +2182,7 @@ local Library do
                 BackgroundTransparency = 1,
                 Position = UDim2New(0.5, 0, 0.5, 0),
                 SliceScale = 0.6000000238418579,
-                ImageColor3 = FromRGB(88, 101, 242),
+                ImageColor3 = FromRGB(147, 51, 234),
                 Size = UDim2New(1, 30, 1, 30),
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Shadow"]:AddToTheme({ImageColor3 = "Accent"})
@@ -2207,7 +2207,7 @@ local Library do
                 ZIndex = 2,
                 BorderSizePixel = 0,
                 CanvasSize = UDim2New(0, 0, 0, 0),
-                ScrollBarImageColor3 = FromRGB(88, 101, 242),
+                ScrollBarImageColor3 = FromRGB(147, 51, 234),
                 ScrollBarImageTransparency = 0.5,
                 MidImage = Library:GetImage("Scrollbar"),
                 BorderColor3 = FromRGB(0, 0, 0),
@@ -2242,7 +2242,7 @@ local Library do
                 ZIndex = 2,
                 BorderSizePixel = 0,
                 CanvasSize = UDim2New(0, 0, 0, 0),
-                ScrollBarImageColor3 = FromRGB(88, 101, 242),
+                ScrollBarImageColor3 = FromRGB(147, 51, 234),
                 ScrollBarImageTransparency = 0.5,
                 MidImage = Library:GetImage("Scrollbar"),
                 BorderColor3 = FromRGB(0, 0, 0),
@@ -2424,7 +2424,7 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 4,
                 BorderSizePixel = 0,
-                BackgroundColor3 = FromRGB(88, 101, 242)
+                BackgroundColor3 = FromRGB(147, 51, 234)
             })  Items["HeaderAccent"]:AddToTheme({BackgroundColor3 = "Accent"})
 
             Instances:Create("UICorner", {
@@ -2572,7 +2572,7 @@ local Library do
                 BackgroundTransparency = 1,
                 Position = UDim2New(0.5, 0, 0.5, 0),
                 SliceScale = 0.6000000238418579,
-                ImageColor3 = FromRGB(88, 101, 242),
+                ImageColor3 = FromRGB(147, 51, 234),
                 Size = UDim2New(1, 15, 1, 15),
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Shadow"]:AddToTheme({ImageColor3 = "Accent"})
@@ -3177,7 +3177,7 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 ZIndex = 5,
                 BorderSizePixel = 0,
-                BackgroundColor3 = FromRGB(88, 101, 242)
+                BackgroundColor3 = FromRGB(147, 51, 234)
             })  Items["Accent"]:AddToTheme({BackgroundColor3 = "Accent"})
 
             Instances:Create("UICorner", {
@@ -3192,7 +3192,7 @@ local Library do
 
             Items["Shadow"] = Instances:Create("ImageLabel", {
                 Parent = Items["Accent"].Instance,
-                ImageColor3 = FromRGB(88, 101, 242),
+                ImageColor3 = FromRGB(147, 51, 234),
                 ImageTransparency = 0.6800000071525574,
                 AnchorPoint = Vector2New(0.5, 0.5),
                 Image = "rbxassetid://112971167999062",
@@ -3223,12 +3223,12 @@ local Library do
                 Size = UDim2New(0, 18, 0, 18),
                 ZIndex = 5,
                 TextSize = 14,
-                BackgroundColor3 = FromRGB(88, 101, 242)
+                BackgroundColor3 = FromRGB(147, 51, 234)
             })  Items["Drag"]:AddToTheme({BackgroundColor3 = "Accent"})
 
             Items["Shadow2"] = Instances:Create("ImageLabel", {
                 Parent = Items["Drag"].Instance,
-                ImageColor3 = FromRGB(88, 101, 242),
+                ImageColor3 = FromRGB(147, 51, 234),
                 ImageTransparency = 0.6800000071525574,
                 AnchorPoint = Vector2New(0.5, 0.5),
                 Image = "rbxassetid://112971167999062",
@@ -3398,7 +3398,7 @@ local Library do
                 ZIndex = 25,
                 BorderSizePixel = 0,
                 CanvasSize = UDim2New(0, 0, 0, 0),
-                ScrollBarImageColor3 = FromRGB(88, 101, 242),
+                ScrollBarImageColor3 = FromRGB(147, 51, 234),
                 MidImage = Library:GetImage("Scrollbar"),
                 BorderColor3 = FromRGB(0, 0, 0),
                 ScrollBarThickness = 2,
