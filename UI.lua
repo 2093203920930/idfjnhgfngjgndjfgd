@@ -543,7 +543,7 @@ local Library do
 
     Instances:Create("UIListLayout", {
         Parent = Library.NotifHolder.Instance,
-        Padding = UDimNew(0, 10),
+        Padding = UDimNew(0, 14),
         SortOrder = Enum.SortOrder.LayoutOrder,
         VerticalAlignment = Enum.VerticalAlignment.Bottom
     }) 
@@ -1654,7 +1654,7 @@ local Library do
             Logo = Data.Logo or Data.logo or "123748867365417",
             Size = Data.Size or Data.size or UDim2New(0, 750, 0, 520),
             FadeSpeed = Data.FadeSpeed or Data.fadespeed or 0.25,
-            PagePadding = Data.PagePadding or Data.pagepadding or 14,
+            PagePadding = Data.PagePadding or Data.pagepadding or 22,
 
             Pages = { },
             SubPages = { },
@@ -1942,7 +1942,7 @@ local Library do
                 Name = "\0",
                 Image = "rbxassetid://" .. Page.Icon,
                 BackgroundTransparency = 1,
-                Size = UDim2New(0, 28, 0, 28),
+                Size = UDim2New(0, 32, 0, 32),
                 ZIndex = 2,
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -2223,15 +2223,15 @@ local Library do
 
             Instances:Create("UIPadding", {
                 Parent = Items["Right"].Instance,
-                PaddingTop = UDimNew(0, 12),
-                PaddingBottom = UDimNew(0, 14),
-                PaddingRight = UDimNew(0, 14),
-                PaddingLeft = UDimNew(0, 7)
+                PaddingTop = UDimNew(0, 16),
+                PaddingBottom = UDimNew(0, 18),
+                PaddingRight = UDimNew(0, 18),
+                PaddingLeft = UDimNew(0, 10)
             }) 
 
             Instances:Create("UIListLayout", {
                 Parent = Items["Right"].Instance,
-                Padding = UDimNew(0, 14),
+                Padding = UDimNew(0, 18),
                 SortOrder = Enum.SortOrder.LayoutOrder
             }) 
 
@@ -2258,15 +2258,15 @@ local Library do
 
             Instances:Create("UIPadding", {
                 Parent = Items["Left"].Instance,
-                PaddingTop = UDimNew(0, 12),
-                PaddingBottom = UDimNew(0, 14),
-                PaddingRight = UDimNew(0, 7),
-                PaddingLeft = UDimNew(0, 14)
+                PaddingTop = UDimNew(0, 16),
+                PaddingBottom = UDimNew(0, 18),
+                PaddingRight = UDimNew(0, 10),
+                PaddingLeft = UDimNew(0, 18)
             }) 
 
             Instances:Create("UIListLayout", {
                 Parent = Items["Left"].Instance,
-                Padding = UDimNew(0, 14),
+                Padding = UDimNew(0, 18),
                 SortOrder = Enum.SortOrder.LayoutOrder
             }) 
         end
@@ -2448,8 +2448,8 @@ local Library do
                 BorderColor3 = FromRGB(0, 0, 0),
                 Name = "\0",
                 BackgroundTransparency = 1,
-                Position = UDim2New(0, 12, 0, 40),
-                Size = UDim2New(1, -24, 0, 0),
+                Position = UDim2New(0, 14, 0, 42),
+                Size = UDim2New(1, -28, 0, 0),
                 BorderSizePixel = 0,
                 AutomaticSize = Enum.AutomaticSize.Y,
                 BackgroundColor3 = FromRGB(255, 255, 255)
@@ -2457,13 +2457,13 @@ local Library do
 
             Instances:Create("UIListLayout", {
                 Parent = Items["Content"].Instance,
-                Padding = UDimNew(0, 8),
+                Padding = UDimNew(0, 12),
                 SortOrder = Enum.SortOrder.LayoutOrder
             }) 
 
             Instances:Create("UIPadding", {
                 Parent = Items["Section"].Instance,
-                PaddingBottom = UDimNew(0, 14)
+                PaddingBottom = UDimNew(0, 16)
             }) 
 
             Instances:Create("UICorner", {
@@ -3413,7 +3413,7 @@ local Library do
 
             Instances:Create("UIListLayout", {
                 Parent = Items["Holder"].Instance,
-                Padding = UDimNew(0, 3),
+                Padding = UDimNew(0, 5),
                 SortOrder = Enum.SortOrder.LayoutOrder
             }) 
 
